@@ -1,0 +1,116 @@
+body {
+	background-color: #1f427a;
+	color: black;
+	font-size: 20px;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.mobile-message {
+	display: none;
+	color: white;
+	text-align: center;
+	margin-top: 40%;
+}
+
+.card-row {
+	display: flex;
+	margin: auto;
+	width: 715px;
+}
+
+#bingo-card-image {
+	display: block;
+	margin: auto;
+	background-image: url("bingo-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 715px;
+	height: 150px;
+	margin-bottom: 5px;
+}
+
+.squares {
+	display: table;
+	position: relative;
+	width: 137px;
+	height: 100px;
+	border: solid 3px #bfbfbf;
+	background-color: #fffafe;
+	cursor: pointer;
+}
+
+.squares.active {
+	border: solid 3px #d61319;
+	color: #d61319;
+}
+
+#free-space {
+	color: #d61319;
+	background-color: #fffafe;
+	display: table;
+	position: relative;
+	width: 137px;
+	height: 100px;
+	border: solid 3px;
+}
+
+#trump-face {
+	display: block;
+	margin: 0 auto;
+	background-image: url("trump_face.png");
+	background-repeat: no-repeat;
+	width: 125px;
+	height: 100px;
+	background-size: contain;
+}
+
+p {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#button {
+	font-family: 'Alegreya', serif;
+	display: block;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	border-radius: 33px;
+	background: #d61319;
+	cursor: pointer;
+	color: white;
+	text-shadow: 2px 2px #20437B;
+	font-size: 32px;
+	letter-spacing: 6px;
+	outline: 0;
+	border: none;
+}
+
+#button:hover {
+	color: #d61319;
+	text-shadow: 2px 2px #20437B;
+	background: #fffafe;
+}
+
+h3 {
+	text-align: center;
+	color: white;
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 730px) {
+	.page-wrapper {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 729px) {
+	.mobile-message {
+		display: block;
+	}
+}
